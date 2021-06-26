@@ -10,7 +10,7 @@ let app = (_req, res) => {
   res.statusCode = 200;
   res.end(`Request received: ${_req.method} - ${_req.path}`);
 };
-
+ 
 try {
   // eslint-disable-next-line import/no-unresolved
   app = require('..');
